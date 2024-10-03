@@ -1,0 +1,139 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+*{
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.headline-text{
+    font-size: large;
+    color: #454545;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1% 0;
+}
+.description-text
+{
+    font-size: medium;
+    color: gray;
+}
+.list-text{
+    font-size: small;
+    color: gray;
+}
+.title{
+    font-size: 15px;
+    color: #454545;
+    
+}
+.italic{
+    font-style: italic;
+}
+.page {
+    width: 21cm;
+    height: 29.7cm;
+    padding: 0.5cm;
+    margin: auto;
+    border: 1px solid #D3D3D3;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.print-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.print-button:hover {
+    background-color: #0056b3;
+}
+@media print {
+    .page {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        page-break-after: always; /* Ensures each page is printed separately */
+    }
+    .print-button {
+        display: none; /* Hide the button when printing */
+    }
+}
+
+.name{
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+.sub-heading{
+    font-size: medium;
+    color: gray;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.main-section{
+    display: flex;
+    width: 100%;
+}
+.section-1{
+    width: 60%;
+}
+
+.section-2 {
+    width: 40%;
+    /* background-color: royalblue; */
+    border-left: 1px solid grey;
+    padding-left: 1%;
+}
+.sub-section{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-right: 1%;
+}
+
+ul{
+    padding-left: 4%;
+    margin: 1% 0;
+}
+
+.project-sub-section{
+    display: flex;
+}
+
+.x-margin{
+    margin: 0 2%;
+}
+
+.margin-top{
+    margin-top: 2%;
+}
+
+.sub-edu{
+    display: flex;
+
+}
+.skills-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+}
+
+span.skills {
+    border: 1px solid grey;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin: 1%;
+}
